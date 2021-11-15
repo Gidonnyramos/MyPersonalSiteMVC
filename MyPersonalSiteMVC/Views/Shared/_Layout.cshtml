@@ -3,13 +3,18 @@
     ViewBag.Title = "Home Page";
 }
 
+<!--author: templatemo
+author URL: https://templatemo.com/
+License: Creative Commons Attribution
+License URL: https://templatemo.com/
+
+-->
 
 <!--for mobile apps-->
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Demand Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
 <script>
     addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
@@ -21,49 +26,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 
 <!-- css files -->
-<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
-<link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
-<link href="~/Content/css/nivo-lightbox.css" rel="stylesheet" />
-<link href="~/Content/css/nivo_themes/default/default.css" rel="stylesheet" />
-<link href="~/Content/css/templatemo-style.css" rel="stylesheet" />
-<link href="~/Content/css/bootstrap-theme.css.map" rel="stylesheet" />
 <link href="~/Content/css/bootstrap-theme.css" rel="stylesheet" />
+<link href="~/Content/css/bootstrap-theme.css.map" rel="stylesheet" />
+<link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+<link href="~/Content/css/bootstrap-theme.min.css.map" rel="stylesheet" />
+<link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/css/bootstrap.css.map" rel="stylesheet" />
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/css/templatemo-style.css" rel="stylesheet" />
 <link href="~/Content/css/Site.css" rel="stylesheet" />
-<link href="~/Content/css/CustomStyles.css" rel="stylesheet" />
+<link href="~/Content/css/nivo-lightbox.css" rel="stylesheet" />
+
 <!-- //css files -->
-<!-- google fonts -->
+<!-- //google fonts -->
+@RenderSection("styles", false)
+
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-<!-- //google fonts -->
-
-@RenderSection("styles", false)
-<link href="~/Content/CustomStyles.css" rel="stylesheet" />
 
 <!-- header -->
 <header>
 
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon icon-bar"></span>
-                <span class="icon icon-bar"></span>
-                <span class="icon icon-bar"></span>
-                <span class="icon icon-bar"></span>
-                <span class="icon icon-bar"></span>
-            </button>
+    @*<div class="container">*@
+    <!-- nav -->
+    @*<nav class="py-3 d-lg-flex">
+        <div id="logo">
+            <h1> <a href="@Url.Action("Index", "Home")"><span class="fa fa-line-chart"></span> My Personal Site </a></h1>
+        </div>*@
+    <nav>
+
+
+        <div class="container">
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "active-link" })</li>
+                        <li class="active">@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "active-link" })</li>
+                        <li class="active">@Html.ActionLink("Links", "Links", "Home", null, new { @class = "active-link" })</li>
+                        <li class="active">@Html.ActionLink("Projects", "Projects", "Home", null, new { @class = "active-link" }) </li>
+                        <li class="active">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "active-link" })</li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
+    <!-- //nav -->
 
-    <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-left">
-            <li class="active">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "active-link" })</li>
-            <li class="active">@Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "active-link" })</li>
-            <li class="active">@Html.ActionLink("Links", "Links", "Home", null, new { @class = "active-link" })</li>
-            <li class="=active">@Html.ActionLink("Projects", "Projects", "Home", null, new { @class = "active-link" })</li>
-            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-
-        </ul>
-    </div>
 
 </header>
 <!-- //header -->
@@ -77,6 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         @* added RenderBody above as a placeholder for the unique content from each view to drop in. *@
     </div>
 </section>
+<br />
 <!-- copyright -->
 <section class="copy-right py-4">
     <div class="container">
@@ -114,6 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     });
 </script>
+
 
 
 

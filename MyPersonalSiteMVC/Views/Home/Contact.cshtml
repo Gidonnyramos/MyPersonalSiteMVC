@@ -6,18 +6,6 @@
 <h3>@ViewBag.Message</h3>
 
 
-<link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="~/Content/css/nivo-lightbox.css">
-
-<link rel="stylesheet" href="~/Content/css/templatemo-style.css">
-
-
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-
-<link href="~/Content/css/CustomStyles.css" rel="stylesheet" />
-
 
 <section class="container mt-4 mb-4 mainContent">
     <div class="row">
@@ -66,41 +54,14 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
-
-
 </section>
 
-<div class="move-top text-right">
-    <a href="#home" class="move-top">
-        <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
-    </a>
-</div>
-<!-- move top -->
-<script src="/Scripts/jquery-3.3.1.js"></script>
 
-<script src="/Scripts/bootstrap.js"></script>
-
-
-<script src="/Scripts/jquery.validate.js"></script>
-<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+@section scripts{
+    <!--This is where the section called scripts is rendered in the Layout. This content came from the Home Index View.-->
+}
 
 
 
-<script>
 
-    $('.menu li').each(function () {
-
-        if ($(this).find('a').attr('href') == window.location.pathname) {
-
-            $(this).addClass('active');
-        }
-    });
-</script>
-
-<!-- Visual Studio Browser Link -->
-<script type="text/javascript" src="http://localhost:61162/e48392f8c9404cd6b5ef0ce794e26999/browserLink" async="async" id="__browserLink_initializationData" data-requestId="5c6cf1c7388c4fa48525e342992279d7" data-appName="Chrome"></script>
-<!-- End Browser Link -->

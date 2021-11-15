@@ -133,6 +133,7 @@
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\CustomStyles.css" />
+    <Content Include="Content\css\nivo-lightbox.css" />
     <Content Include="Content\css\nivo_themes\default\close%402x.png" />
     <Content Include="Content\css\nivo_themes\default\close.png" />
     <Content Include="Content\css\nivo_themes\default\default.css" />
